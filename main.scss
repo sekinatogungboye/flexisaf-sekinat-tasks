@@ -1,0 +1,75 @@
+
+// Load color module
+@use "sass:color";
+
+// Variables
+$primary-color: rgb(142, 142, 175);
+$secondary-color: #6C757D;
+$text-color: #222;
+$font-stack: 'Segoe UI', Arial, sans-serif;
+
+// Mixin (reusable styles)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Global styles
+body {
+  font-family: $font-stack;
+  background: #f0f8ff;
+  color: $text-color;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+// Headings
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: color.adjust($primary-color, $lightness: -15%);
+  }
+}
+
+// Menu list (for index.html)
+ul {
+  font-size: large;
+  margin-left: 20px;
+
+  li {
+    margin: 5px 0;
+    color: $secondary-color;
+  }
+}
+
+// Footer
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background: color.adjust($primary-color, $lightness: 35%);
+  border-radius: 5px;
+}
+
+// Order page (index2.html)
+.order-link {
+  @include flex-center;
+  background: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background: color.adjust($primary-color, $lightness: -15%);
+  }
+}

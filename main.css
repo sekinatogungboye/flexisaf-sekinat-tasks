@@ -1,0 +1,56 @@
+/*# sourceMappingURL=main.css.map */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #e67e22;
+}
+
+a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b85d18;
+}
+
+ul {
+  font-size: large;
+  margin-left: 20px;
+}
+
+ul li {
+  margin: 5px 0;
+  color: #2ecc71;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background: #a8f0c6;
+  border-radius: 5px;
+}
+
+.order-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.order-link:hover {
+  background: #25a25a;
+}
